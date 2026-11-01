@@ -1,0 +1,80 @@
+{
+  "title": "Skyward Regatta",
+  "bpm": 138,
+  "meter": "4/4",
+  "key": "D major",
+  "loop_from": 1,
+  "voices": {
+    "trumpet": {"instrument": "trumpet", "gain": 1.0, "pan": 0.0},
+    "section": {"instrument": "trumpet_section", "gain": 0.85, "pan": 0.18},
+    "horn": {"instrument": "horn", "gain": 0.8, "pan": -0.32},
+    "flute": {"instrument": "flute", "gain": 1.0, "pan": 0.22},
+    "strings": {"instrument": "strings", "gain": 0.9},
+    "arp": {"instrument": "arp", "arp": 0.25, "gain": 0.65, "pan": 0.38, "echo": 0.22},
+    "bass": {"instrument": "bass", "gain": 1.0},
+    "timp": {"instrument": "timpani", "gain": 0.9, "pan": -0.1},
+    "drums": {"instrument": "drums", "gain": 0.8},
+    "storm_brass": {"instrument": "trombone", "layer": "storm", "gain": 0.9, "pan": -0.2},
+    "storm_drums": {"instrument": "drums", "layer": "storm", "gain": 0.65, "pan": 0.2}
+  },
+  "sections": {
+    "intro": {
+      "bars": 4,
+      "chords": "D | G | Em A | A",
+      "parts": {
+        "trumpet": "@0.9 D5:1/2! A4:1/2 D5:1/2 F#5:1/2 A5:2- | B5:3/2! A5:1/2 G5:1/2 F#5:1/2 E5:1 | G5:1 B4:1/2 E5:1/2 A5:1 G5:1/2 E5:1/2 | A5:3~ r:1",
+        "section": "@0.8 A4+D5:1/2! r:3/2 A4+D5+F#5:2- | B4+D5+G5:3/2! B4+D5+G5:1/2 r:1/2 D5+G5:1/2 D5+G5:1 | G4+B4+E5:1! r:1 A4+C#5+E5:1! r:1/2 A4+C#5+E5:1/2! | A4+C#5+E5:3- r:1",
+        "strings": "@0.7 D4+A4+D5:4 | G3+D4+B4:4 | E4+G4+B4:2 A3+E4+C#5:2 | A3+E4+C#5:4",
+        "bass": "@0.85 D2:1 r:1/2 D2:1/2 D2:1 A2:1 | G2:1 r:1/2 G2:1/2 G2:1 D3:1 | E2:1 E3:1 A2:1 A2:1 | A2:1 C#3:1 E3:1 A2:1",
+        "timp": "@0.9 D3:2! r:2 | G2:2! r:2 | E3:2 A2:2 | A2:1/4 A2:1/4 A2:1/4 A2:1/4 A2:1/2 A2:1/2 A2:2!",
+        "drums": "@0.8 kick+crash:1! hat:1 snare:1 hat:1 | kick+hat:1 hat:1/2 kick:1/2 snare:1 hat:1/2 hat:1/2 | kick+hat:1 snare:1 kick+hat:1 snare:1/2 snare:1/2 | {snare:1/4}*8 tom_hi:1/2 tom_hi:1/2 tom_lo:1/2 tom_lo:1/2"
+      }
+    },
+    "soar": {
+      "bars": 8,
+      "chords": "D | A/C# | Bm | G | D | G | Em7 A7 | D",
+      "parts": {
+        "trumpet": "@0.85 F#5:1! A5:1/2 F#5:1/2 D5:2 | E5:1 F#5:1/2 E5:1/2 C#5:2 | D5:1 F#5:1/2 D5:1/2 B4:1 D5:1 | G5:2 F#5:1 E5:1 | F#5:1! A5:1/2 F#5:1/2 D5:1 F#5:1 | B5:3/2! A5:1/2 G5:1 B5:1 | A5:1 G5:1/2 F#5:1/2 E5:1 G5:1 | F#5:3~ r:1",
+        "horn": "@0.65 A4:2 F#4:2 | E4:2 A4:2 | F#4:2 D4:2 | D4:2 G4:2 | A4:2 D5:2 | D5:2 B4:2 | B4:2 C#5:2 | D5:2 A4:1 C#5:1",
+        "strings": "@0.6 D4+F#4+A4:4 | C#4+E4+A4:4 | B3+D4+F#4:4 | B3+D4+G4:4 | A3+D4+F#4:4 | B3+D4+G4:4 | B3+E4+G4:2 A3+C#4+G4:2 | A3+D4+F#4:4",
+        "arp": "@0.6 D4+F#4+A4+D5:4 | C#4+E4+A4+C#5:4 | B3+D4+F#4+B4:4 | B3+D4+G4+B4:4 | A3+D4+F#4+A4:4 | B3+D4+G4+B4:4 | B3+E4+G4+B4:2 A3+C#4+E4+G4:2 | A3+D4+F#4+A4:4",
+        "bass": "@0.85 D2:1 D3:1/2 D2:1/2 A2:1 D3:1 | C#2:1 C#3:1/2 C#2:1/2 A2:1 E3:1 | B2:1 B2:1/2 F#2:1/2 D3:1 B2:1 | G2:1 G2:1/2 D3:1/2 B2:1 G2:1 | D2:1 D3:1/2 D2:1/2 A2:1 D3:1 | G2:1 G2:1/2 D3:1/2 B2:1 G2:1 | E2:1 B2:1 A2:1 C#3:1 | D2:1 A2:1 D3:1 A2:1",
+        "timp": "@0.8 D3:1! r:3 | r:4 | r:4 | G2:1 r:3 | D3:1! r:3 | G2:1 r:3 | E3:1 r:1 A2:1 r:1 | D3:1 r:1 A2:1/2 A2:1/2 A2:1",
+        "drums": "@0.75 {kick+hat:1/2 hat:1/2 snare+hat:1/2 hat:1/2 kick+hat:1/2 kick+hat:1/2 snare+hat:1/2 hat:1/2 |}*7 kick+hat:1/2 hat:1/2 snare:1/2 snare:1/2 tom_hi:1/2 tom_hi:1/2 tom_lo:1/2 snare:1/2",
+        "storm_brass": "@0.8 {D3:1/2! D3:1/2 r:1/2 D3:1/2 A3:1 D3:1 |}*2 B2:1/2! B2:1/2 r:1/2 B2:1/2 F#3:1 B2:1 | G2:1/2! G2:1/2 r:1/2 G2:1/2 D3:1 G2:1 | D3:1/2! D3:1/2 r:1/2 D3:1/2 A3:1 D3:1 | G2:1/2! G2:1/2 r:1/2 G2:1/2 D3:1 G2:1 | E3:1/2! E3:1/2 r:1/2 E3:1/2 A3:1/2! A3:1/2 r:1/2 A3:1/2 | D3:1/2! D3:1/2 r:1/2 D3:1/2 A3:1 D3:1",
+        "storm_drums": "@0.6 {snare:1/4 snare:1/4 snare:1/2 r:1/2 snare:1/2 snare:1/4 snare:1/4 snare:1/2 tom_lo:1/2 tom_lo:1/2 |}*8"
+      }
+    },
+    "shout": {
+      "bars": 8,
+      "chords": "G | A | F#m | Bm | G | A | Bm G | Asus4 A",
+      "parts": {
+        "flute": "@0.85 B5:3/2 A5:1/2 G5:1 D5:1 | C#6:3/2 B5:1/2 A5:1 E5:1 | F#5:1 A5:1/2 C#6:1/2 A5:1 F#5:1 | B5:3~ r:1/2 F#5:1/2 | G5:1/2 A5:1/2 B5:1 D6:1 B5:1 | C#6:1/2 D6:1/2 E6:1 A5:2 | D6:1 C#6:1/2 B5:1/2 B5:1 D6:1 | D6:2 C#6:2~",
+        "section": "@0.75 r:1/2 G4+B4+D5:1/2! r:1 G4+B4+D5:1/2 G4+B4+D5:1/2. r:1 | r:1/2 A4+C#5+E5:1/2! r:1 A4+C#5+E5:1/2 A4+C#5+E5:1/2. r:1 | r:1/2 F#4+A4+C#5:1/2! r:1 F#4+A4+C#5:1/2 F#4+A4+C#5:1/2. r:1 | r:1/2 F#4+B4+D5:1/2! r:1 F#4+B4+D5:1/2 F#4+B4+D5:1/2. r:1 | r:1/2 G4+B4+D5:1/2! r:1 G4+B4+D5:1/2 G4+B4+D5:1/2. r:1 | r:1/2 A4+C#5+E5:1/2! r:1 A4+C#5+E5:1/2 A4+C#5+E5:1/2. r:1 | F#4+B4+D5:1! r:1 G4+B4+D5:1! r:1 | A4+D5+E5:1! r:1 A4+C#5+E5:2!",
+        "horn": "@0.65 G4:4 | A4:4 | A4:4 | B4:2 F#4:2 | D4:2 G4:2 | E4:2 A4:2 | F#4:2 G4:2 | A4:4",
+        "strings": "@0.65 G3+D4+B4:4 | A3+E4+C#5:4 | F#3+C#4+A4:4 | F#3+D4+B4:4 | G3+D4+B4:4 | A3+E4+C#5:4 | F#3+D4+B4:2 G3+D4+B4:2 | A3+D4+E4:2 A3+C#4+E4:2",
+        "arp": "@0.55 G4+B4+D5:4 | A4+C#5+E5:4 | F#4+A4+C#5:4 | F#4+B4+D5:4 | G4+B4+D5:4 | A4+C#5+E5:4 | F#4+B4+D5:2 G4+B4+D5:2 | A4+D5+E5:2 A4+C#5+E5:2",
+        "bass": "@0.85 G2:1/2 G2:1/2 D3:1/2 G2:1/2 B2:1/2 D3:1/2 G2:1 | A2:1/2 A2:1/2 E3:1/2 A2:1/2 C#3:1/2 E3:1/2 A2:1 | F#2:1/2 F#2:1/2 C#3:1/2 F#2:1/2 A2:1/2 C#3:1/2 F#2:1 | B2:1/2 B2:1/2 F#3:1/2 B2:1/2 D3:1/2 F#3:1/2 B2:1 | G2:1/2 G2:1/2 D3:1/2 G2:1/2 B2:1/2 D3:1/2 G2:1 | A2:1/2 A2:1/2 E3:1/2 A2:1/2 C#3:1/2 E3:1/2 A2:1 | B2:1 F#3:1 G2:1 D3:1 | A2:1 E3:1 A2:1 E3:1",
+        "timp": "@0.8 G2:1! r:3 | A2:1! r:3 | r:4 | r:4 | G2:1! r:3 | A2:1! r:3 | B2:1 r:1 G2:1 r:1 | A2:1/2 A2:1/2 A2:1/2 A2:1/2 A2:2!",
+        "drums": "@0.75 kick+crash:1! ride:1/2 ride:1/2 snare+ride:1 ride:1/2 kick:1/2 | {kick+ride:1 ride:1/2 ride:1/2 snare+ride:1 ride:1/2 kick:1/2 |}*6 snare:1/2 snare:1/2 snare:1/2 snare:1/2 {snare:1/4}*4 tom_hi:1/2 tom_lo:1/2",
+        "storm_brass": "@0.8 G2:1/2! G2:1/2 r:1/2 G2:1/2 D3:1 G2:1 | A2:1/2! A2:1/2 r:1/2 A2:1/2 E3:1 A2:1 | F#2:1/2! F#2:1/2 r:1/2 F#2:1/2 C#3:1 F#2:1 | B2:1/2! B2:1/2 r:1/2 B2:1/2 F#3:1 B2:1 | G2:1/2! G2:1/2 r:1/2 G2:1/2 D3:1 G2:1 | A2:1/2! A2:1/2 r:1/2 A2:1/2 E3:1 A2:1 | B2:1/2! B2:1/2 r:1/2 B2:1/2 G2:1/2! G2:1/2 r:1/2 G2:1/2 | A2:1/2 A2:1/2 A2:1/2 A2:1/2 A2:2!",
+        "storm_drums": "@0.6 {snare:1/4 snare:1/4 snare:1/2 r:1/2 snare:1/2 snare:1/4 snare:1/4 snare:1/2 tom_lo:1/2 tom_lo:1/2 |}*8"
+      }
+    },
+    "turn": {
+      "bars": 2,
+      "chords": "E | A7",
+      "parts": {
+        "trumpet": "@0.9 B5:1! G#5:1/2 B5:1/2 E6:2 | C#6:1! B5:1/2 A5:1/2 G5:1 E5:1",
+        "section": "@0.8 E5+G#5:1! r:1 E5+G#5+B5:2- | A4+C#5+G5:1! r:1 A4+C#5+E5:1/2! r:1/2 A4+C#5+G5:1!",
+        "strings": "@0.7 E4+G#4+B4:4 | A3+E4+G4+C#5:4",
+        "bass": "@0.9 E2:1 E3:1 B2:1 G#2:1 | A2:1 G2:1 E2:1 A2:1",
+        "timp": "@0.9 E3:2! r:2 | A2:1/2 A2:1/2 A2:1/2 A2:1/2 A2:2!",
+        "drums": "@0.8 kick+crash:1! hat:1 snare:1 hat:1 | {snare:1/4}*8 tom_hi:1/2 tom_hi:1/2 tom_lo:1/2 tom_lo:1/2",
+        "storm_brass": "@0.8 E3:1/2! E3:1/2 r:1/2 E3:1/2 B3:1 E3:1 | A2:1/2! A2:1/2 r:1/2 A2:1/2 E3:1 A2:1",
+        "storm_drums": "@0.6 {snare:1/4 snare:1/4 snare:1/2 r:1/2 snare:1/2 snare:1/4 snare:1/4 snare:1/2 tom_lo:1/2 tom_lo:1/2 |}*2"
+      }
+    }
+  },
+  "arrangement": ["intro", "soar", "shout", {"section": "soar", "transpose": 2}, "turn"]
+}
