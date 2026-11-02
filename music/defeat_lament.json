@@ -1,0 +1,68 @@
+{
+  "title": "Defeat Lament",
+  "bpm": 72,
+  "meter": "4/4",
+  "key": "C minor",
+  "loop": false,
+  "voices": {
+    "horns": {
+      "instrument": "orch_horns",
+      "gain": 1.1,
+      "pan": -0.2
+    },
+    "bones": {
+      "instrument": "orch_trombones",
+      "gain": 0.8,
+      "pan": 0.2
+    },
+    "strings": {
+      "instrument": "orch_strings",
+      "gain": 1.1,
+      "pan": 0.0
+    },
+    "celli": {
+      "instrument": "orch_celli",
+      "gain": 0.8,
+      "pan": -0.15
+    },
+    "basses": {
+      "instrument": "orch_basses",
+      "gain": 0.8,
+      "pan": 0.0
+    },
+    "choir": {
+      "instrument": "orch_choir",
+      "gain": 0.9,
+      "pan": 0.0
+    },
+    "timp": {
+      "instrument": "timpani",
+      "gain": 0.6,
+      "pan": 0.0
+    },
+    "perc": {
+      "instrument": "drums",
+      "gain": 0.65,
+      "pan": 0.0
+    }
+  },
+  "sections": {
+    "fall": {
+      "bars": 3,
+      "chords": "Cm | Ab Fm | Cm",
+      "parts": {
+        "horns": "@0.85 G4:3/2! Eb4:1/2 C4:2 | C4:1 Ab3:1 F3:1/2 Ab3:1/2 D4:1 | C4:4-",
+        "bones": "@0.7 r:4 | Ab2+Eb3:2 F2+C3:2 | C2+G2:4-",
+        "strings": "@0.6 C4+Eb4+G4:4 | Ab3+C4+Eb4:2 F3+Ab3+C4:2 | C3+G3+Eb4:4",
+        "celli": "@0.7 C3:4 | Ab2:2 F2:2 | C2:4",
+        "basses": "@0.7 C2:4 | Ab1:2 F1:2 | C1:4",
+        "choir": "@0.55 Eb4+G4:4 | Eb4+Ab4:2 C4+F4:2 | Eb4+G4:4",
+        "timp": "@0.8 C3:1! r:3 | Ab2:1 r:1 F2:1 r:1 | {C3:1/4}*4 C3:1! r:2",
+        "perc": "@0.8 gong:1 r:3 | r:4 | bdrum:1 r:3"
+      }
+    }
+  },
+  "arrangement": [
+    "fall"
+  ]
+}

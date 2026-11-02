@@ -68,6 +68,7 @@ Use this for ship dogfights and bosses, where the music must stay tense through 
 - **Harmony:** heroic minor uses i-bVI-bIII-bVII (Dm Bb F C). Menace uses the Neapolitan (Cm Ab Db G) and a half-diminished ii before V.
 - **Form:** creep with the theme low in the brass, state it in the trumpets, then give the fight a heart with a beautiful major section led by `strings_lead` over `harp` and `choir_pad`. Return with a key lift using a two-bar dominant, then turn back so the loop lands in the home key.
 - **Length:** aim for a loop of about a minute. Players hear it for many turns, and the lyrical section is what stops it from tiring them.
+- **Full symphonic sound:** score it for the `orch_` voices, with `taiko` under the percussion, `orch_tremolo` in the danger layer and `orch_winds` flourishes between brass phrases. See `music/wings_of_the_tempest.json` (straight 4/4) and `music/gauntlet_of_thunderheads.json` (galloping 6/8).
 - **Adaptive layer:** put high tremolo strings, low brass 3+3+2 stabs and snare in a second layer for danger or a boss's second phase.
 
 ## Adaptive layers

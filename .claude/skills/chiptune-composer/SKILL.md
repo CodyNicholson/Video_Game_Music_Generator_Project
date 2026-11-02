@@ -72,9 +72,19 @@ Use these as rough guides for spotting problems, not as targets:
 - **Loop seam:** `seam ok: False` means something is wrong in the renderer, so don't ship it. Report it as a bug.
 - **Spectrogram:** look for sections that differ from each other, silent gaps you didn't write, and unbroken bright bands that suggest a note stuck on or a voice too loud.
 
+## Sound effects
+
+`scripts/sfx.py` renders one-shot effects and seamless loops from the same math, with no samples. Each effect is a function in that file, named as the game names it. Add a function to add a sound.
+
+```bash
+.venv/bin/python SKILL/scripts/sfx.py --out output/sfx
+```
+
+It prints each effect's length and levels, writes `report.json`, and exits with an error if an effect clips, is nearly silent, clicks at either end, or has a loop that doesn't join up. These are measurements, so ask the user to listen.
+
 ## Limits worth telling the user
 
-This renders chip and FM-style sound, not realistic orchestra or vocals. Lyrics, sung parts and recordings of real instruments aren't possible. It also has no realtime component, so adaptive behaviour comes from the game engine crossfading stems.
+This renders synthesized sound, not recordings. The `orch_` voices aim for a symphonic section sound, but they won't pass for a real orchestra. Lyrics, sung parts and recordings of real instruments aren't possible. It also has no realtime component, so adaptive behaviour comes from the game engine crossfading stems.
 
 ## Tests
 

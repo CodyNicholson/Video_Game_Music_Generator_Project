@@ -314,5 +314,25 @@ class ExampleTests(unittest.TestCase):
             self.assertEqual(score.lint(song, synth.INSTRUMENTS, synth.DRUM_NAMES), [], path.name)
 
 
+class SoundEffects(unittest.TestCase):
+    def test_every_effect_renders_cleanly(self):
+        import sfx
+        for name in sfx.EFFECTS:
+            self.assertEqual(sfx.check(name, sfx.render(name))["problems"], [], name)
+
+    def test_effects_repeat_exactly(self):
+        import sfx
+        self.assertTrue(np.array_equal(sfx.render("FlakBurst"), sfx.render("FlakBurst")))
+
+
+class OrchestralVoices(unittest.TestCase):
+    def test_section_voices_change_nothing_for_older_instruments(self):
+        for name, params in synth.INSTRUMENTS.items():
+            if not name.startswith("orch_"):
+                self.assertEqual(params["body"], (), name)
+                self.assertEqual(params["drift_cents"], 0.0, name)
+                self.assertEqual(params["onset_spread"], 0.0, name)
+
+
 if __name__ == "__main__":
     unittest.main()

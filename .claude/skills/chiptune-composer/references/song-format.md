@@ -113,12 +113,15 @@ Example: `D5:0.5.` is a staccato eighth, and `G5:3~` is a dotted half with wide 
 | Woodwinds and folk | `flute`, `clarinet`, `oboe`, `whistle`, `accordion`, `guitar`, `harp`, `bell` |
 | Chip | `pulse_lead`, `square`, `arp` |
 | Bass and low | `bass`, `upright`, `timpani` |
+| Symphonic sections | `orch_trumpets`, `orch_horns`, `orch_trombones`, `orch_tuba`, `orch_violins` (soaring lead), `orch_strings` (sustained), `orch_spiccato` (fast figures), `orch_tremolo`, `orch_celli`, `orch_basses`, `orch_choir` (wordless), `orch_winds` |
+
+The `orch_` voices add body resonances, brightness that follows velocity, and players who drift and enter slightly apart. Prefer them when a piece should read as an orchestra instead of chip or FM. They're quiet per note because they stack many voices, so expect to raise `gain` on leads.
 
 The checker warns when notes fall outside an instrument's range, listed in `scripts/synth.py`.
 
 ## Drums
 
-Set `"instrument": "drums"`. Names: `kick`, `snare`, `rim`, `clap`, `hat`, `ohat`, `ride`, `crash`, `tom_hi`, `tom_lo`, `shaker`, `tamb`, `brush`, `bdrum` (concert bass drum), `gong`, `swell`. `swell` is a cymbal roll that grows over its written duration; the others ignore duration.
+Set `"instrument": "drums"`. Names: `kick`, `snare`, `rim`, `clap`, `hat`, `ohat`, `ride`, `crash`, `tom_hi`, `tom_lo`, `shaker`, `tamb`, `brush`, `bdrum` (concert bass drum), `gong`, `swell`, `taiko`, `taiko_hi`, `field_snare`, `snare_roll`, `cymbal` (concert clash). `swell` is a cymbal roll and `snare_roll` a press roll, and both grow over their written duration; the others ignore duration.
 
 ## Layers and loops
 

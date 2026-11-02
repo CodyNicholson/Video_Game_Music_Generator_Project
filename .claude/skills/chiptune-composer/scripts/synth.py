@@ -30,6 +30,8 @@ _BASE = {
     "scoop_cents": 180.0, "scoop_time": 0.07, "fall_cents": 900.0,
     "glide_cents": 0.0, "glide_time": 0.03,
     "reverb": 0.15, "level": 1.0, "one_shot": 0.0,
+    # Ensemble realism, used by the orch_ voices. All are off by default.
+    "body": (), "bright_vel": 0.0, "drift_cents": 0.0, "onset_spread": 0.0, "bow_noise": 0.0,
     "range": (24, 108), "role": "melody", "gm": 80,
 }
 
@@ -113,11 +115,51 @@ INSTRUMENTS = {
     "timpani": _inst(osc="sine", attack=0.002, decay=0.5, sustain=0.0, release=0.5, gate=1.0, one_shot=0.8, breath=0.14,
                      breath_clock=2600, glide_cents=70, glide_time=0.09, cutoff=900, level=0.82, reverb=0.3,
                      range=(36, 60), role="bass", gm=47),
+    # Symphonic section voices. Stacked saws through body resonances, brighter when played harder,
+    # with each player drifting and entering slightly apart, so they read as a section and not one oscillator.
+    "orch_trumpets": _inst(osc="saw", attack=0.018, decay=0.16, sustain=0.82, release=0.09, unison=4, detune=6, spread=0.5,
+                           cutoff=6200, dark_cutoff=3300, dark_time=0.22, bright_vel=1.0, drift_cents=3, onset_spread=0.008,
+                           body=((1250, 4.5, 1.0), (2800, 2.5, 0.8)), vibrato_cents=9, vibrato_delay=0.32, scoop_cents=120,
+                           level=0.27, reverb=0.3, range=(52, 91), gm=61),
+    "orch_horns": _inst(osc="saw", attack=0.04, decay=0.25, sustain=0.88, release=0.16, unison=4, detune=5, spread=0.55,
+                        cutoff=2300, dark_cutoff=1300, dark_time=0.3, bright_vel=1.2, drift_cents=3, onset_spread=0.014,
+                        body=((480, 4.0, 1.0),), vibrato_cents=5, vibrato_delay=0.45,
+                        level=0.42, reverb=0.42, range=(41, 79), gm=60),
+    "orch_trombones": _inst(osc="saw", attack=0.022, decay=0.16, sustain=0.82, release=0.1, unison=3, detune=5, spread=0.35,
+                            cutoff=3100, dark_cutoff=1500, dark_time=0.2, bright_vel=1.4, drift_cents=2, onset_spread=0.008,
+                            body=((620, 4.0, 1.0),), level=0.38, reverb=0.28, range=(36, 74), gm=57),
+    "orch_tuba": _inst(osc="saw", attack=0.03, decay=0.2, sustain=0.85, release=0.12, unison=2, detune=3, spread=0.1,
+                       cutoff=900, bright_vel=0.8, sub=0.2, level=0.6, reverb=0.2, range=(24, 58), role="bass", gm=58),
+    "orch_violins": _inst(osc="saw", attack=0.06, decay=0.3, sustain=0.92, release=0.24, unison=8, detune=9, spread=0.7,
+                          cutoff=6400, bright_vel=0.7, drift_cents=4, onset_spread=0.018, bow_noise=0.02,
+                          body=((420, 2.0, 1.0), (1150, 2.5, 0.8), (3000, 3.0, 0.8)), vibrato_cents=15, vibrato_rate=5.6, vibrato_delay=0.14,
+                          gate=1.0, level=0.2, reverb=0.5, range=(52, 103), gm=48),
+    "orch_strings": _inst(osc="saw", attack=0.14, decay=0.3, sustain=0.92, release=0.34, unison=8, detune=10, spread=0.9,
+                          cutoff=3400, drift_cents=4, onset_spread=0.03, body=((350, 2.5, 1.0), (1100, 1.5, 1.0)),
+                          vibrato_cents=8, vibrato_rate=5.0, vibrato_delay=0.25, gate=1.0, level=0.17, reverb=0.55, range=(36, 96), gm=48),
+    "orch_spiccato": _inst(osc="saw", attack=0.002, decay=0.075, sustain=0.14, release=0.05, unison=5, detune=9, spread=0.75,
+                           cutoff=5000, bright_vel=1.0, onset_spread=0.006, bow_noise=0.06,
+                           body=((420, 2.0, 1.0), (2800, 2.5, 0.8)), gate=1.0, level=0.34, reverb=0.3, range=(36, 96), gm=45),
+    "orch_tremolo": _inst(osc="saw", attack=0.02, decay=0.2, sustain=0.8, release=0.12, unison=6, detune=11, spread=0.9,
+                          cutoff=5600, tremolo_rate=15.0, tremolo_depth=0.5, drift_cents=4, body=((3000, 3.0, 1.0),),
+                          gate=1.0, level=0.15, reverb=0.45, range=(43, 100), gm=44),
+    "orch_celli": _inst(osc="saw", attack=0.006, decay=0.14, sustain=0.62, release=0.09, unison=5, detune=7, spread=0.45,
+                        cutoff=1900, bright_vel=1.2, onset_spread=0.006, bow_noise=0.03, body=((240, 3.0, 1.0), (800, 2.0, 1.0)),
+                        level=0.42, reverb=0.26, range=(28, 72), gm=42),
+    "orch_basses": _inst(osc="saw", attack=0.012, decay=0.18, sustain=0.72, release=0.1, unison=3, detune=5, spread=0.2,
+                         cutoff=800, sub=0.12, bright_vel=0.8, level=0.56, reverb=0.2, range=(24, 55), role="bass", gm=43),
+    "orch_choir": _inst(osc="saw", attack=0.22, decay=0.4, sustain=0.92, release=0.42, unison=8, detune=7, spread=0.9, cutoff=3600,
+                        body=((720, 9.0, 0.5), (1150, 7.0, 0.45), (2600, 5.0, 0.5)), drift_cents=5, onset_spread=0.04,
+                        vibrato_cents=8, vibrato_rate=4.8, vibrato_delay=0.3, breath=0.008, gate=1.0,
+                        level=0.13, reverb=0.65, range=(45, 88), gm=52),
+    "orch_winds": _inst(osc="tri", attack=0.02, decay=0.1, sustain=0.85, release=0.07, unison=2, detune=4, spread=0.3, breath=0.03,
+                        breath_clock=20000, vibrato_cents=10, vibrato_rate=5.4, vibrato_delay=0.2, level=0.6, reverb=0.4,
+                        range=(60, 103), gm=73),
 }
 
 DRUM_MIDI = {"kick": 36, "snare": 38, "rim": 37, "clap": 39, "hat": 42, "ohat": 46, "ride": 51, "crash": 49,
              "tom_hi": 48, "tom_lo": 43, "shaker": 70, "tamb": 54, "brush": 40, "swell": 57,
-             "bdrum": 35, "gong": 52}
+             "bdrum": 35, "gong": 52, "taiko": 41, "taiko_hi": 45, "field_snare": 31, "snare_roll": 58, "cymbal": 55}
 DRUM_NAMES = frozenset(DRUM_MIDI)
 
 _lfsr_cache = {}
@@ -165,6 +207,19 @@ def lowpass(signal, cutoff, sr):
     freqs = np.fft.rfftfreq(len(signal) + pad, 1.0 / sr)
     spectrum /= np.sqrt(1.0 + (freqs / cutoff) ** 4)
     return np.fft.irfft(spectrum)[: len(signal)]
+
+
+def _body_filter(signal, peaks, sr):
+    """Resonant peaks in the frequency domain: (centre Hz, gain dB, width in octaves)."""
+    if len(signal) < 8:
+        return signal
+    pad = min(2048, len(signal))
+    spectrum = np.fft.rfft(signal, len(signal) + pad)
+    freqs = np.maximum(np.fft.rfftfreq(len(signal) + pad, 1.0 / sr), 1.0)
+    decibels = np.zeros_like(freqs)
+    for centre, gain, width in peaks:
+        decibels += gain * np.exp(-0.5 * (np.log2(freqs / centre) / (width / 2.0)) ** 2)
+    return np.fft.irfft(spectrum * 10.0 ** (decibels / 20.0))[: len(signal)]
 
 
 def _oscillator(params, phase_total, freq_hz, t, vel, accent, sr):
@@ -259,7 +314,13 @@ def render_note(params, midi, duration, velocity, mods, sr, seed):
     for voice in range(voices):
         spread_pos = (2.0 * voice / (voices - 1) - 1.0) if voices > 1 else 0.0
         detune = params["detune"] * spread_pos
-        freq = base * 2.0 ** ((cents + detune) / 1200.0)
+        player_cents = cents + detune
+        if params["drift_cents"]:
+            # Each player wanders slowly, so a held section chord keeps moving.
+            rates = rng.uniform(0.25, 1.1, 2)
+            starts = rng.uniform(0, TWO_PI, 2)
+            player_cents = player_cents + params["drift_cents"] * (np.sin(TWO_PI * rates[0] * t + starts[0]) + np.sin(TWO_PI * rates[1] * t + starts[1])) / 2.0
+        freq = base * 2.0 ** (player_cents / 1200.0)
         phase = np.cumsum(freq) / sr + rng.uniform(0, 1)
         wave = _oscillator(params, phase, freq, t, vel, accent, sr)
         if params["bits"]:
@@ -267,6 +328,10 @@ def render_note(params, midi, duration, velocity, mods, sr, seed):
             wave = np.round(wave * steps) / steps
         if params["sub"]:
             wave = wave + params["sub"] * np.sin(np.pi * phase)  # one octave down
+        if params["onset_spread"]:
+            # Players in a section never enter at quite the same instant.
+            lag = rng.uniform(0.0, params["onset_spread"])
+            wave = wave * np.clip((t - lag) / 0.003, 0.0, 1.0)
         pan = params["spread"] * spread_pos
         angle = (pan + 1.0) * np.pi / 4.0
         left += wave * np.cos(angle)
@@ -277,17 +342,28 @@ def render_note(params, midi, duration, velocity, mods, sr, seed):
 
     def tone_filter(channel):
         cutoff = params["cutoff"] or params["cutoff_mult"] * base
+        if params["bright_vel"] and cutoff:
+            # Harder playing opens the sound up, as it does on real brass and strings.
+            cutoff = cutoff * (1.0 + params["bright_vel"] * (vel - 0.7))
         out = lowpass(channel, cutoff, sr) if cutoff else channel
         if params["dark_cutoff"]:
             # Plucks start bright and darken, mimicking a string losing its overtones.
             dark = lowpass(channel, params["dark_cutoff"], sr)
             mix = np.exp(-t / params["dark_time"])
             out = mix * out + (1.0 - mix) * dark
+        if params["body"]:
+            out = _body_filter(out, params["body"], sr)
         return out
 
     left = tone_filter(left)
     right = tone_filter(right)
     env = _envelope(params, n_gate, n_total, sr)
+    if params["bow_noise"]:
+        # The bite of a bow catching the string.
+        scrape = _noise(n_total, 16000, sr, offset=int(rng.integers(0, 30000)))
+        scrape = lowpass(scrape, 6000, sr) * params["bow_noise"] * np.exp(-t / 0.018)
+        left = left + scrape
+        right = right + scrape
     if params["breath"]:
         hiss = _noise(n_total, params["breath_clock"], sr, offset=int(rng.integers(0, 30000)))
         hiss = lowpass(hiss, 7000 if params["breath_clock"] > 5000 else 1400, sr) * params["breath"]
@@ -391,6 +467,37 @@ def render_drum(name, duration, velocity, mods, sr, seed):
         wash = (noise - lowpass(noise, 2500, sr)) * np.minimum(t / 0.12, 1.0) * np.exp(-t / 0.55) * 0.16
         wave = (partials * np.exp(-t / 0.95) * 0.62 + wash)
         pan = -0.06
+    elif name in ("taiko", "taiko_hi"):
+        # A big war drum: a heavy pitched thud and the slap of the stick on the skin.
+        low, tail = (58.0, 0.34) if name == "taiko" else (92.0, 0.22)
+        t = clock(1.0 if name == "taiko" else 0.7)
+        body = np.sin(TWO_PI * np.cumsum(low + low * 0.9 * np.exp(-t / 0.028)) / sr) * np.exp(-t / tail)
+        skin = np.sin(TWO_PI * np.cumsum(low * 2.3 + low * np.exp(-t / 0.02)) / sr) * np.exp(-t / 0.07) * 0.32
+        slap = lowpass(hiss(len(t), 9000), 2400, sr) * np.exp(-t / 0.014) * 0.5
+        wave = (body + skin + slap) * 1.15
+        pan = -0.1 if name == "taiko" else 0.14
+    elif name == "field_snare":
+        # A deep military snare, with more rattle than the kit snare.
+        t = clock(0.36)
+        body = np.sin(TWO_PI * np.cumsum(150.0 + 70.0 * np.exp(-t / 0.02)) / sr) * np.exp(-t / 0.07) * 0.6
+        rattle = lowpass(hiss(len(t), 15000), 6800, sr) * np.exp(-t / 0.11) * 0.8
+        wave = body + rattle
+        pan = 0.1
+    elif name == "snare_roll":
+        # A press roll that grows over its written duration.
+        t = clock(max(duration, 0.2))
+        strokes = 0.72 + 0.28 * np.sin(TWO_PI * 26.0 * t)
+        rattle = lowpass(hiss(len(t), 15000), 6800, sr)
+        wave = rattle * strokes * (0.18 + 0.82 * (t / t[-1]) ** 1.8) * 0.7
+        pan = 0.1
+    elif name == "cymbal":
+        # Clashed concert cymbals: a hard edge and a long shimmering wash.
+        t = clock(2.2)
+        noise = hiss(len(t), 30000)
+        high = noise - lowpass(noise, 2600, sr) * 0.85
+        ring = sum(np.sin(TWO_PI * f * t) for f in (1830.0, 2710.0, 3970.0, 5230.0)) / 4.0
+        wave = (high * 0.5 + ring * 0.16) * np.exp(-t / 0.62) + noise * np.exp(-t / 0.012) * 0.4
+        pan = -0.2
     elif name == "swell":
         # Cymbal roll that grows to its end; the token's duration sets its length.
         t = clock(max(duration, 0.2))
