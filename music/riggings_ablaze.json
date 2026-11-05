@@ -1,0 +1,228 @@
+{
+  "title": "Riggings Ablaze",
+  "bpm": 160,
+  "meter": "4/4",
+  "key": "E minor",
+  "swing": 0,
+  "loop": true,
+  "loop_from": 1,
+  "voices": {
+    "lead": {
+      "instrument": "trumpet",
+      "gain": 1.0,
+      "pan": 0.1,
+      "echo": 0.15
+    },
+    "sax": {
+      "instrument": "sax",
+      "gain": 0.9,
+      "pan": -0.3
+    },
+    "bone": {
+      "instrument": "trombone",
+      "gain": 1.0,
+      "pan": 0.25
+    },
+    "section": {
+      "instrument": "trumpet_section",
+      "gain": 0.75,
+      "pan": -0.1
+    },
+    "ostinato": {
+      "instrument": "strings_ostinato",
+      "gain": 0.8,
+      "pan": 0.35
+    },
+    "pad": {
+      "instrument": "strings",
+      "gain": 0.7,
+      "pan": 0.0
+    },
+    "bass": {
+      "instrument": "bass",
+      "gain": 0.9,
+      "pan": 0.0
+    },
+    "arp": {
+      "instrument": "arp",
+      "gain": 0.42,
+      "pan": -0.4,
+      "arp": 0.25,
+      "echo": 0.2
+    },
+    "timp": {
+      "instrument": "timpani",
+      "gain": 0.7,
+      "pan": -0.08
+    },
+    "perc": {
+      "instrument": "drums",
+      "gain": 1.05,
+      "pan": 0.0
+    },
+    "war": {
+      "instrument": "drums",
+      "gain": 0.85,
+      "pan": 0.0
+    },
+    "x_tremolo": {
+      "instrument": "orch_tremolo",
+      "gain": 1.8,
+      "pan": -0.36,
+      "layer": "danger"
+    },
+    "x_bones": {
+      "instrument": "orch_trombones",
+      "gain": 0.72,
+      "pan": 0.36,
+      "layer": "danger"
+    },
+    "x_war": {
+      "instrument": "drums",
+      "gain": 0.62,
+      "pan": 0.15,
+      "layer": "danger"
+    },
+    "riser": {
+      "instrument": "drums",
+      "gain": 2.4,
+      "pan": 0.0
+    },
+    "hit": {
+      "instrument": "strings_stab",
+      "gain": 2.2,
+      "pan": -0.12
+    },
+    "hit_brass": {
+      "instrument": "trumpet_section",
+      "gain": 1.0,
+      "pan": 0.12
+    }
+  },
+  "sections": {
+    "fuse": {
+      "bars": 2,
+      "chords": "Em | B7",
+      "parts": {
+        "section": "@0.9 E4+G4+B4:1! r:3 | D#4+F#4+A4:1! r:1 D#4+F#4+B4:1/2! D#4+F#4+B4:1/2 D#4+F#4+B4:1/2 D#4+F#4+B4:1/2",
+        "bone": "@0.85 E2:1! r:3 | B2:1! r:3",
+        "bass": "@0.85 E2:4 | B1:4",
+        "pad": "@0.55 E3+G3+B3:4 | D#3+F#3+A3:4",
+        "timp": "@0.95 E3:1! r:3 | r:3 B2:1/4 B2:1/4 B2:1/4 B2:1/4",
+        "perc": "@0.95 crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4",
+        "war": "@0.9 taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2!",
+        "riser": "@0.8 r:4 | r:2 swell:2",
+        "hit": "@1.0 G3+B3+E4:1/2! r:7/2 | r:4",
+        "hit_brass": "@1.0 E4+G4+B4:1/2! r:7/2 | r:4"
+      }
+    },
+    "chase": {
+      "bars": 8,
+      "chords": "Em | D | C | B7 | Em | D | C B7 | Em",
+      "parts": {
+        "bone": "@0.9 E3:1/2! E3:1/4 E3:1/4 G3:1/2 E3:1/2 B3:1/2! A3:1/2 G3:1/2 F#3:1/2 | D3:1/2! D3:1/4 D3:1/4 F#3:1/2 D3:1/2 A3:1/2! G3:1/2 F#3:1/2 E3:1/2 | C3:1/2! C3:1/4 C3:1/4 E3:1/2 C3:1/2 G3:1/2! F#3:1/2 E3:1/2 D3:1/2 | B2:1/2! D#3:1/2 F#3:1/2 A3:1/2 B3:1! r:1 | E3:1/2! E3:1/4 E3:1/4 G3:1/2 E3:1/2 B3:1/2! A3:1/2 G3:1/2 F#3:1/2 | D3:1/2! D3:1/4 D3:1/4 F#3:1/2 D3:1/2 A3:1/2! G3:1/2 F#3:1/2 E3:1/2 | C3:1/2! E3:1/2 G3:1/2 E3:1/2 B2:1/2! D#3:1/2 F#3:1/2 A3:1/2 | E3:1! r:1/2 B2:1/2 E3:1/2! r:1/2 E2:1!",
+        "section": "@0.72 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 | r:1/2 D4+F#4+A4:1/2! r:1/2 D4+F#4+A4:1/2 r:1/2 D4+F#4+A4:1/2! r:1/2 D4+F#4+A4:1/2 | r:1/2 C4+E4+G4:1/2! r:1/2 C4+E4+G4:1/2 r:1/2 C4+E4+G4:1/2! r:1/2 C4+E4+G4:1/2 | r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2 r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2 | r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 | r:1/2 D4+F#4+A4:1/2! r:1/2 D4+F#4+A4:1/2 r:1/2 D4+F#4+A4:1/2! r:1/2 D4+F#4+A4:1/2 | r:1/2 C4+E4+G4:1/2! r:1/2 C4+E4+G4:1/2 r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2 | r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2",
+        "ostinato": "@0.62 E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 B4:1/2 E4:1/4 E4:1/4 | F#4:1/2! F#4:1/4 F#4:1/4 A4:1/2 F#4:1/4 F#4:1/4 F#4:1/2 F#4:1/4 F#4:1/4 D5:1/2 F#4:1/4 F#4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 C5:1/2 E4:1/4 E4:1/4 | F#4:1/2! F#4:1/4 F#4:1/4 A4:1/2 F#4:1/4 F#4:1/4 F#4:1/2 F#4:1/4 F#4:1/4 B4:1/2 F#4:1/4 F#4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 B4:1/2 E4:1/4 E4:1/4 | F#4:1/2! F#4:1/4 F#4:1/4 A4:1/2 F#4:1/4 F#4:1/4 F#4:1/2 F#4:1/4 F#4:1/4 D5:1/2 F#4:1/4 F#4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 F#4:1/2 F#4:1/4 F#4:1/4 B4:1/2 F#4:1/4 F#4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 B4:1/2 E4:1/4 E4:1/4",
+        "bass": "@0.8 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 | D2:1/2! D2:1/2 D2:1/2 D2:1/2! D2:1/2 D2:1/2 D2:1/2! D2:1/2 | C2:1/2! C2:1/2 C2:1/2 C2:1/2! C2:1/2 C2:1/2 C2:1/2! C2:1/2 | B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 | E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 | D2:1/2! D2:1/2 D2:1/2 D2:1/2! D2:1/2 D2:1/2 D2:1/2! D2:1/2 | C2:1/2! C2:1/2 C2:1/2 C2:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 | E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2",
+        "arp": "@0.5 E4+G4+B4:4 | F#4+A4+D5:4 | E4+G4+C5:4 | F#4+A4+B4+Eb5:4 | E4+G4+B4:4 | F#4+A4+D5:4 | E4+G4+C5:2 F#4+A4+B4+Eb5:2 | E4+G4+B4:4",
+        "timp": "@0.95 E3:1! r:3 | r:3 D3:1/4 D3:1/4 D3:1/4 D3:1/4 | C3:1! r:3 | r:3 B2:1/4 B2:1/4 B2:1/4 B2:1/4 | E3:1! r:3 | r:3 D3:1/4 D3:1/4 D3:1/4 D3:1/4 | C3:1! r:3 | r:3 E3:1/4 E3:1/4 E3:1/4 E3:1/4",
+        "perc": "@0.95 crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4",
+        "war": "@0.9 taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2!",
+        "x_tremolo": "@0.5 E5:4 | F#5:4 | E5:4 | F#5:4 | E5:4 | F#5:4 | E5:2 F#5:2 | E5:4",
+        "x_bones": "@0.8 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1/2 | D3+F#3+A3:1/2! r:1 D3+F#3+A3:1/2! r:1 D3+F#3+A3:1/2! r:1/2 | C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2 | E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1/2 | D3+F#3+A3:1/2! r:1 D3+F#3+A3:1/2! r:1 D3+F#3+A3:1/2! r:1/2 | C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2 | E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1/2",
+        "x_war": "@0.6 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2",
+        "riser": "@0.8 r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2",
+        "hit": "@1.0 G3+B3+E4:1/2! r:7/2 | r:4 | G3+C4+E4:1/2! r:7/2 | r:4 | G3+B3+E4:1/2! r:7/2 | r:4 | G3+C4+E4:1/2! r:7/2 | r:4",
+        "hit_brass": "@1.0 E4+G4+B4:1/2! r:7/2 | r:4 | E4+G4+C5:1/2! r:7/2 | r:4 | E4+G4+B4:1/2! r:7/2 | r:4 | E4+G4+C5:1/2! r:7/2 | r:4"
+      }
+    },
+    "hook": {
+      "bars": 8,
+      "chords": "Em | Em | Am | Am | C | D | B7 | B7",
+      "parts": {
+        "lead": "@0.95 B4:1/2! E5:1/2 G5:1/2 B5:1 A5:1/2 G5:1/2 F#5:1/2 | G5:3/2 E5:1/2 B4:2~ | C5:1/2! E5:1/2 A5:1/2 C6:1 B5:1/2 A5:1/2 G5:1/2 | A5:3/2 E5:1/2 C5:2~ | E5:1! G5:1/2 C6:1/2 E6:1 D6:1/2 C6:1/2 | D6:1 A5:1/2 F#5:1/2 D5:2 | D#5:1! F#5:1 A5:1 B5:1 | A5:1/2 F#5:1/2 D#5:1/2 B4:1/2 F#5:2-",
+        "sax": "@0.72 G4:2 B4:2 | E4:2 G4:2 | E4:2 A4:2 | C4:2 E4:2 | G4:2 E4:2 | F#4:2 A4:2 | D#4:2 F#4:2 | A4:2 D#4:2",
+        "section": "@0.7 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 | r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 r:1/2 E4+G4+B4:1/2! r:1/2 E4+G4+B4:1/2 | r:1/2 C4+E4+A4:1/2! r:1/2 C4+E4+A4:1/2 r:1/2 C4+E4+A4:1/2! r:1/2 C4+E4+A4:1/2 | r:1/2 C4+E4+A4:1/2! r:1/2 C4+E4+A4:1/2 r:1/2 C4+E4+A4:1/2! r:1/2 C4+E4+A4:1/2 | r:1/2 C4+E4+G4:1/2! r:1/2 C4+E4+G4:1/2 r:1/2 C4+E4+G4:1/2! r:1/2 C4+E4+G4:1/2 | r:1/2 D4+F#4+A4:1/2! r:1/2 D4+F#4+A4:1/2 r:1/2 D4+F#4+A4:1/2! r:1/2 D4+F#4+A4:1/2 | r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2 r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2 | r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2 r:1/2 Eb4+F#4+A4:1/2! r:1/2 Eb4+F#4+A4:1/2",
+        "ostinato": "@0.58 E4:1/4! G4:1/4 B4:1/4 E5:1/4 B4:1/4 G4:1/4 B4:1/4 E5:1/4 E4:1/4 G4:1/4 B4:1/4 E5:1/4 B4:1/4 G4:1/4 B4:1/4 E5:1/4 | E4:1/4! G4:1/4 B4:1/4 E5:1/4 B4:1/4 G4:1/4 B4:1/4 E5:1/4 E4:1/4 G4:1/4 B4:1/4 E5:1/4 B4:1/4 G4:1/4 B4:1/4 E5:1/4 | E4:1/4! A4:1/4 C5:1/4 E5:1/4 C5:1/4 A4:1/4 C5:1/4 E5:1/4 E4:1/4 A4:1/4 C5:1/4 E5:1/4 C5:1/4 A4:1/4 C5:1/4 E5:1/4 | E4:1/4! A4:1/4 C5:1/4 E5:1/4 C5:1/4 A4:1/4 C5:1/4 E5:1/4 E4:1/4 A4:1/4 C5:1/4 E5:1/4 C5:1/4 A4:1/4 C5:1/4 E5:1/4 | E4:1/4! G4:1/4 C5:1/4 E5:1/4 C5:1/4 G4:1/4 C5:1/4 E5:1/4 E4:1/4 G4:1/4 C5:1/4 E5:1/4 C5:1/4 G4:1/4 C5:1/4 E5:1/4 | F#4:1/4! A4:1/4 D5:1/4 F#5:1/4 D5:1/4 A4:1/4 D5:1/4 F#5:1/4 F#4:1/4 A4:1/4 D5:1/4 F#5:1/4 D5:1/4 A4:1/4 D5:1/4 F#5:1/4 | F#4:1/4! A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4 F#4:1/4 A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4 | F#4:1/4! A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4 F#4:1/4 A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4",
+        "bass": "@0.8 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 | E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 E1:1/2 E1:1/2! E1:1/2 | A1:1/2! A1:1/2 A1:1/2 A1:1/2! A1:1/2 A1:1/2 A1:1/2! A1:1/2 | A1:1/2! A1:1/2 A1:1/2 A1:1/2! A1:1/2 A1:1/2 A1:1/2! A1:1/2 | C2:1/2! C2:1/2 C2:1/2 C2:1/2! C2:1/2 C2:1/2 C2:1/2! C2:1/2 | D2:1/2! D2:1/2 D2:1/2 D2:1/2! D2:1/2 D2:1/2 D2:1/2! D2:1/2 | B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 | B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2",
+        "pad": "@0.45 G3+B3+E4:4 | G3+B3+E4:4 | A3+C4+E4:4 | A3+C4+E4:4 | G3+C4+E4:4 | A3+D4+F#4:4 | A3+B3+Eb4+F#4:4 | A3+B3+Eb4+F#4:4",
+        "arp": "@0.45 E4+G4+B4:4 | E4+G4+B4:4 | E4+A4+C5:4 | E4+A4+C5:4 | E4+G4+C5:4 | F#4+A4+D5:4 | F#4+A4+B4+Eb5:4 | F#4+A4+B4+Eb5:4",
+        "timp": "@0.95 E3:1! r:3 | r:3 E3:1/4 E3:1/4 E3:1/4 E3:1/4 | A2:1! r:3 | r:3 A2:1/4 A2:1/4 A2:1/4 A2:1/4 | C3:1! r:3 | r:3 D3:1/4 D3:1/4 D3:1/4 D3:1/4 | B2:1! r:3 | r:3 B2:1/4 B2:1/4 B2:1/4 B2:1/4",
+        "perc": "@0.95 crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4",
+        "war": "@0.9 taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2!",
+        "x_tremolo": "@0.5 E5:4 | E5:4 | E5:4 | E5:4 | E5:4 | F#5:4 | F#5:4 | F#5:4",
+        "x_bones": "@0.8 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1/2 | E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1 E3+G3+B3:1/2! r:1/2 | C3+E3+A3:1/2! r:1 C3+E3+A3:1/2! r:1 C3+E3+A3:1/2! r:1/2 | C3+E3+A3:1/2! r:1 C3+E3+A3:1/2! r:1 C3+E3+A3:1/2! r:1/2 | C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | D3+F#3+A3:1/2! r:1 D3+F#3+A3:1/2! r:1 D3+F#3+A3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2",
+        "x_war": "@0.6 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 | taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2 taiko_hi:1/2 taiko_hi:1/4 taiko_hi:1/4 field_snare:1/2 taiko_hi:1/2",
+        "riser": "@0.8 r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2",
+        "hit": "@1.0 G3+B3+E4:1/2! r:7/2 | r:4 | A3+C4+E4:1/2! r:7/2 | r:4 | G3+C4+E4:1/2! r:7/2 | r:4 | A3+B3+Eb4:1/2! r:7/2 | r:4",
+        "hit_brass": "@1.0 E4+G4+B4:1/2! r:7/2 | r:4 | E4+A4+C5:1/2! r:7/2 | r:4 | E4+G4+C5:1/2! r:7/2 | r:4 | Eb4+F#4+A4:1/2! r:7/2 | r:4"
+      }
+    },
+    "smoke": {
+      "bars": 8,
+      "chords": "Cmaj7 | Am7 | F#m7b5 | B7 | Cmaj7 | Am7 | F#m7b5 | B7",
+      "parts": {
+        "sax": "@0.9 E4:3/2! G4:1/2 B4:2 | C5:1 B4:1/2 A4:1/2 E4:2 | A4:3/2! C5:1/2 E5:2 | D#5:1 C5:1/2 B4:1/2 F#4:2 | G4:3/2! B4:1/2 E5:2~ | G5:1 E5:1/2 C5:1/2 A4:2 | C5:1 A4:1 F#4:1 E4:1 | D#4:1 F#4:1 A4:1 B4:1",
+        "ostinato": "@0.55 E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 B4:1/2 E4:1/4 E4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 A4:1/2 E4:1/4 E4:1/4 | E4:1/2! E4:1/4 E4:1/4 F#4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 A4:1/2 E4:1/4 E4:1/4 | F#4:1/2! F#4:1/4 F#4:1/4 A4:1/2 F#4:1/4 F#4:1/4 F#4:1/2 F#4:1/4 F#4:1/4 B4:1/2 F#4:1/4 F#4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 B4:1/2 E4:1/4 E4:1/4 | E4:1/2! E4:1/4 E4:1/4 G4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 A4:1/2 E4:1/4 E4:1/4 | E4:1/2! E4:1/4 E4:1/4 F#4:1/2 E4:1/4 E4:1/4 E4:1/2 E4:1/4 E4:1/4 A4:1/2 E4:1/4 E4:1/4 | F#4:1/2! F#4:1/4 F#4:1/4 A4:1/2 F#4:1/4 F#4:1/4 F#4:1/2 F#4:1/4 F#4:1/4 B4:1/2 F#4:1/4 F#4:1/4",
+        "bass": "@0.75 C2:4 | A1:4 | F#1:4 | B1:4 | C2:4 | A1:4 | F#1:4 | B1:4",
+        "pad": "@0.5 G3+B3+C4+E4:4 | G3+A3+C4+E4:4 | A3+C4+E4+F#4:4 | A3+B3+Eb4+F#4:4 | G3+B3+C4+E4:4 | G3+A3+C4+E4:4 | A3+C4+E4+F#4:4 | A3+B3+Eb4+F#4:4",
+        "arp": "@0.36 E4+G4+B4+C5:4 | E4+G4+A4+C5:4 | E4+F#4+A4+C5:4 | F#4+A4+B4+Eb5:4 | E4+G4+B4+C5:4 | E4+G4+A4+C5:4 | E4+F#4+A4+C5:4 | F#4+A4+B4+Eb5:4",
+        "timp": "@0.95 C3:1! r:3 | r:3 A2:1/4 A2:1/4 A2:1/4 A2:1/4 | F#2:1! r:3 | r:3 B2:1/4 B2:1/4 B2:1/4 B2:1/4 | C3:1! r:3 | r:3 A2:1/4 A2:1/4 A2:1/4 A2:1/4 | F#2:1! r:3 | r:3 B2:1/4 B2:1/4 B2:1/4 B2:1/4",
+        "perc": "@0.95 crash+kick+bdrum:1/2! field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 | kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 | kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 | kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 | kick:1/2 field_snare:1/4 field_snare:1/4 kick+field_snare+clap:1/2! field_snare:1/2 kick:1/2 field_snare:1/4 field_snare:1/4 snare:1/4 snare:1/4 snare:1/4 snare:1/4",
+        "x_tremolo": "@0.5 E5:4 | E5:4 | E5:4 | F#5:4 | E5:4 | E5:4 | E5:4 | F#5:4",
+        "x_bones": "@0.8 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | C3+E3+F#3:1/2! r:1 C3+E3+F#3:1/2! r:1 C3+E3+F#3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2 | C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | C3+E3+F#3:1/2! r:1 C3+E3+F#3:1/2! r:1 C3+E3+F#3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2",
+        "war": "@0.9 taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2!",
+        "riser": "@0.8 r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2",
+        "hit": "@1.0 G3+B3+C4:1/2! r:7/2 | r:4 | A3+C4+E4:1/2! r:7/2 | r:4 | G3+B3+C4:1/2! r:7/2 | r:4 | A3+C4+E4:1/2! r:7/2 | r:4",
+        "hit_brass": "@1.0 E4+G4+B4:1/2! r:7/2 | r:4 | E4+F#4+A4:1/2! r:7/2 | r:4 | E4+G4+B4:1/2! r:7/2 | r:4 | E4+F#4+A4:1/2! r:7/2 | r:4"
+      }
+    },
+    "sunbreak": {
+      "bars": 8,
+      "chords": "G | D/F# | Em | C | G | D/F# | C D | G",
+      "parts": {
+        "lead": "@0.92 D5:1! G5:1 B5:3/2 A5:1/2 | A5:3~ F#5:1/2 D5:1/2 | E5:1/2 F#5:1/2 G5:1 B5:1 E6:1 | C6:3/2 B5:1/2 G5:1 E5:1 | B5:1! D6:1 B5:1 G5:1 | A5:1 F#5:1 D5:2 | E5:1 G5:1 F#5:1 A5:1 | G5:3~ D5:1",
+        "sax": "@0.6 B3:2 D4:2 | A3:2 D4:2 | G3:2 B3:2 | G3:2 E4:2 | B3:2 D4:2 | A3:2 F#4:2 | G3:2 A3:2 | B3:2 D4:2",
+        "pad": "@0.6 G3+B3+D4:4 | A3+D4+F#4:4 | G3+B3+E4:4 | G3+C4+E4:4 | G3+B3+D4:4 | A3+D4+F#4:4 | G3+C4+E4:2 A3+D4+F#4:2 | G3+B3+D4:4",
+        "arp": "@0.5 G4+B4+D5:4 | A4+D5+F#5:4 | G4+B4+E5:4 | G4+C5+E5:4 | G4+B4+D5:4 | A4+D5+F#5:4 | G4+C5+E5:2 A4+D5+F#5:2 | G4+B4+D5:4",
+        "bass": "@0.7 G1:4 | F#1:4 | E1:4 | C2:4 | G1:4 | F#1:4 | C2:2 D2:2 | G1:4",
+        "timp": "@0.95 G2:1! r:3 | r:3 F#2:1/4 F#2:1/4 F#2:1/4 F#2:1/4 | E3:1! r:3 | r:3 C3:1/4 C3:1/4 C3:1/4 C3:1/4 | G2:1! r:3 | r:3 F#2:1/4 F#2:1/4 F#2:1/4 F#2:1/4 | C3:1! r:3 | r:3 G2:1/4 G2:1/4 G2:1/4 G2:1/4",
+        "perc": "@0.95 crash+kick+bdrum:1/2! ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 | kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 | kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 | kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 | kick:1/2 ride:1/2 kick+snare+clap:1/2! ride:1/2 kick:1/2 ride:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4",
+        "x_tremolo": "@0.36 G5:4 | F#5:4 | E5:4 | E5:4 | G5:4 | F#5:4 | E5:2 F#5:2 | G5:4",
+        "war": "@0.9 taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2!",
+        "riser": "@0.8 r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2 | r:4 | r:2 swell:2",
+        "hit": "@1.0 G3+B3+D4:1/2! r:7/2 | r:4 | G3+B3+E4:1/2! r:7/2 | r:4 | G3+B3+D4:1/2! r:7/2 | r:4 | G3+C4+E4:1/2! r:7/2 | r:4",
+        "hit_brass": "@1.0 D4+G4+B4:1/2! r:7/2 | r:4 | E4+G4+B4:1/2! r:7/2 | r:4 | D4+G4+B4:1/2! r:7/2 | r:4 | E4+G4+C5:1/2! r:7/2 | r:4"
+      },
+      "key": "G major"
+    },
+    "turn": {
+      "bars": 4,
+      "chords": "C | Am | B7 | B7",
+      "parts": {
+        "section": "@0.95 C5+E5+G5:1/2! r:1/2 C5+E5+G5:1/2! r:1/2 C5+E5+G5:2- | A4+C5+E5:1/2! r:1/2 A4+C5+E5:1/2! r:1/2 A4+C5+E5:2- | B4+D#5+F#5:1/2! r:1/2 B4+D#5+F#5:1/2! r:1/2 D#5+F#5+A5:1/2! r:1/2 D#5+F#5+A5:1/2! r:1/2 | D#5+F#5+B5:1! r:1 D#5+A5+B5:2-",
+        "bone": "@0.9 C3:1! C3:1 E3:1 G3:1 | A2:1! C3:1 E3:1 A3:1 | B2:1! D#3:1 F#3:1 A3:1 | B3:1! A3:1/2 F#3:1/2 D#3:1 B2:1!",
+        "ostinato": "@0.66 E4:1/4! G4:1/4 C5:1/4 E5:1/4 C5:1/4 G4:1/4 C5:1/4 E5:1/4 E4:1/4 G4:1/4 C5:1/4 E5:1/4 C5:1/4 G4:1/4 C5:1/4 E5:1/4 | E4:1/4! A4:1/4 C5:1/4 E5:1/4 C5:1/4 A4:1/4 C5:1/4 E5:1/4 E4:1/4 A4:1/4 C5:1/4 E5:1/4 C5:1/4 A4:1/4 C5:1/4 E5:1/4 | F#4:1/4! A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4 F#4:1/4 A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4 | F#4:1/4! A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4 F#4:1/4 A4:1/4 B4:1/4 F#5:1/4 B4:1/4 A4:1/4 B4:1/4 F#5:1/4",
+        "bass": "@0.82 C2:1/2! C2:1/2 C2:1/2 C2:1/2! C2:1/2 C2:1/2 C2:1/2! C2:1/2 | A1:1/2! A1:1/2 A1:1/2 A1:1/2! A1:1/2 A1:1/2 A1:1/2! A1:1/2 | B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 | B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2 B1:1/2 B1:1/2! B1:1/2",
+        "pad": "@0.6 C4+E4+G4:4 | A3+C4+E4:4 | B3+D#4+F#4:4 | B3+D#4+A4:4",
+        "timp": "@0.95 C3:1! r:3 | r:3 A2:1/4 A2:1/4 A2:1/4 A2:1/4 | B2:1! r:3 | r:3 B2:1/4 B2:1/4 B2:1/4 B2:1/4",
+        "perc": "@0.95 crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4 | crash+kick+bdrum:1/2! hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 kick+snare+clap:1/2! hat:1/2 | kick:1/2 hat:1/2 kick+snare+clap:1/2! hat:1/2 kick:1/2 ohat:1/2 snare:1/4 snare:1/4 snare:1/4 snare:1/4",
+        "war": "@0.9 taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2! | taiko+bdrum:1! r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 | r:1 taiko_hi:1/2 taiko_hi:1/2 r:1 taiko_hi:1/4 taiko_hi:1/4 taiko:1/2!",
+        "x_tremolo": "@0.5 E5:4 | E5:4 | F#5:4 | F#5:4",
+        "x_bones": "@0.8 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1 C3+E3+G3:1/2! r:1/2 | C3+E3+A3:1/2! r:1 C3+E3+A3:1/2! r:1 C3+E3+A3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2 | Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1 Eb3+F#3+A3:1/2! r:1/2",
+        "riser": "@0.8 r:4 | r:2 swell:2 | r:4 | r:2 swell:2",
+        "hit": "@1.0 G3+C4+E4:1/2! r:7/2 | r:4 | A3+B3+Eb4:1/2! r:7/2 | r:4",
+        "hit_brass": "@1.0 E4+G4+C5:1/2! r:7/2 | r:4 | Eb4+F#4+A4:1/2! r:7/2 | r:4"
+      }
+    }
+  },
+  "arrangement": [
+    "fuse",
+    "chase",
+    "hook",
+    "smoke",
+    "sunbreak",
+    "hook",
+    "turn"
+  ]
+}
